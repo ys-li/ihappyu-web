@@ -1,0 +1,245 @@
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+   
+    
+}
+html {
+     height: 100%;
+     
+}
+.lineno{
+  position: fixed;
+  width: 100%;
+  width: 100vw;
+  text-align: right;
+  left: 0px;
+  top: 0px;
+}
+.hex-t{
+  font-style:lighter;
+  font-size: 6px;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  text-align:center;
+  z-index: 10;
+}
+#content-wrapper{
+width: 90vw;
+height: 90vh;
+background-color: #FFFFFF;
+position: fixed;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+box-shadow: 5px 5px 30px #888888;
+overflow:hidden;
+}
+.content{
+position: absolute;
+height: auto;
+width: 90%;
+max-width: 750px;
+height: 90%;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: 30px auto auto auto;
+}
+
+body {
+  /*font: 100%/1.4em 'Calibre Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+  font-family: "Open Sans" !important;
+  
+  margin: 0 auto;
+  color: #222;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  
+  background-color: #FFFFFF;
+
+}
+
+.greeting{
+  min-height: 100vh;
+}
+
+#c{
+  width:100vw;
+  height:100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+#greet-title{
+width: 200px;
+height: 200px;
+position: absolute;
+left: 50%;
+top: 50%;
+
+margin-top: -100px;
+margin-left: -100px;
+}
+#greet-subtitle{
+  text-align: right;
+  width: 100%;
+  animation-delay: 0.5s;
+}
+
+.msg{
+    position:fixed;
+    background: none repeat scroll 0 0 #FFA200;
+    color: #FFFFFF;
+    margin-bottom: -40px;
+    bottom: 0;
+    font-size: 13px;
+    height:40px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    z-index:6;
+}
+
+
+/*material inputs*/
+* { box-sizing:border-box; }
+
+
+
+/* form starting stylings ------------------------------- */
+.materialgroup 			  { 
+  position:relative; 
+  margin:20px 0 20px 0;
+}
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:300;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+
+
+/*old*/
+
+body,
+#panel {
+    min-height: 100%;
+}
+ 
+.dotted.full {
+  
+  border-style: dashed;
+  border-width: 1px; 
+  width:250px;
+  border-color: #BABABA; 
+  color: #BABABA;
+} 
+h4{
+    margin: 3px; 
+    margin-left: 7px;
+    margin-top:10px;
+}
+.dotted.left{
+  border-left:dashed #BABABA 1px;
+}
+.dotted.right{
+  border-right: dashed #BABABA 1px;
+}
+.dotted.top{
+  border-top:dashed #BABABA 1px;
+}
+.dotted.bottom{
+  border-bottom: dashed #BABABA 1px;
+}
+
+
